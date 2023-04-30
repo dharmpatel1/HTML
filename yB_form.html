@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+        <label for="">Name</label> <input type="text" placeholder="Firstname" value="Dharm Patel">
+
+        <br><br>
+
+        <label for="">Password</label> <input type="password">
+
+        <br><br>
+
+        <label for="">Gender</label> 
+        <input type="radio" name="gender" id="male"> 
+        <label for="male">Male</label> 
+        <input type="radio" name="gender" id="female"> 
+        <label for="female">Female</label>
+        <!-- name attribute ma kai nai lakhyu hoy tya sudhi male and female banne click thase. id and for ma same name aapyu hase to male text par click karvathi pan button click thai jase. -->
+
+        <br><br>
+
+        <label for="">Hobbies</label> <input type="checkbox" name="hobby" id="music"> <label for="music">Music</label> <input type="checkbox" name="hobby" id="reading"> <label for="reading">Reading</label> <input type="checkbox" name="hobby" id="travelling"> <label for="travelling">Travelling</label> <input type="checkbox" name="hobby" id="sport"> <label for="sport">Sport</label>
+
+        <br><br>
+
+        <label for="">Message</label> <textarea name="" id="" cols="40" rows="8" placeholder="Write your views here..."></textarea>
+
+        <br><br>
+
+        <label for="">Country</label>   <select>
+                                                <option>India</option>
+                                                <option>Pakistan</option>
+                                                <option>UK</option>
+                                                <option>Canada</option>
+                                                <option>USA</option>
+                                                <!-- use selected attribute in option tag for by default  -->
+                                        </select>
+
+        <br><br>
+
+        <label>Cars</label> <select>
+                                <optgroup label="Suzuki">
+                                    <option>Wagonar</option>
+                                    <option>Alto</option>
+                                    <option>Swift</option>
+                                    <option>Brezza</option>
+                                </optgroup>
+
+                                <optgroup label="Hyundai">
+                                    <option>Verna</option>
+                                    <option>I20</option>
+                                    <option>I10</option>
+                                    <option>Aura</option>
+                                </optgroup>
+                            </select>
+        <br><br>
+
+        <label>Cities</label>   <input list="cities">
+                                <datalist id="cities">
+                                    <option>Ahmedabad</option>
+                                    <option>Goa</option>
+                                    <option>Surat</option>
+                                    <option>Mehsana</option>
+                                    <option>Bombay</option>
+                                    <option>Bangalore</option>
+                                </datalist>
+        <br><br>
+
+        <label>Upload file</label> <input type="file" accept="image/*">
+        <!-- input attribute ni andar accept="image/*" lakhvathi only image j apload kari sakase and * no meaning koi pan format ma  -->
+
+        <br><br>
+
+        <pre>              <input type="submit">    <input type="reset"></pre>
+
+        </fieldset>
+    </form>
+            
+</body>
+</html>
